@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Weather App</title>
+	<meta charset="UTF-8" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+	  <div class="container">
+			<form class="search-bar" id="search-city">
+          <div class="row">
+            <div class="col-4">
+              <input 
+                type="search"
+								placeholder="Search City"
+                class="form-control"
+                auto-complete="off"
+                id="city-input"
+
+              />
+						<br /> 
+            <div class="col-3">
+              <input type="submit" value="Search" class="btn-primary"/>
+            </div>
+					</div>
+        </div>
+        <br />
+      
+        <div class="col-3"></div>
+        <button class="btn btn-success" id="current-location-button"> Current</button>
+        </form>
+
+        <h1 id="city"></h1>
+        <div id="current-date">
+        </div>
+        <h2>
+          <img src="images/sun.jpg" class="current-weather" alt="sun"/>
+          <span id="temperature"></span>
+
+          <ul class="degree">
+            <li><span class="farenheit">°C</span>|F°</li>
+          </ul>
+          <ul class="phw">
+            <li>Precipitation: <span id="precipitation"></span>%</li>
+            <li>Humidity:<span id="humidity"></span>%</li>
+            <li>Wind:<span id="wind"> </span>mph</li>
+          </ul>
+        </h2>
+	<div id="app"></div>
+
+	<script src="src/index.js">
+	city = city.toLowerCase();
+city = city.trim();
+if (weather[city] !== undefined) {
+  let temperature = weather[city].temp;
+  let humid = weather[city].humidity;
+  let celsiusTemp = Math.round(temperature);
+  let fahrenheitTemp = Math.round((temperature * 9) / 5 + 32);
+
+  alert(
+    "It is currently ${celsiusTemp}°C ${fahrenheitTemp}°F in ${city} with a humidity of ${humid}%"
+  );
+} else {
+  alert(
+    "Sorry, we do not know the weather for this city, try going to https://www.google.com/search?q=weather+${city}"
+  );
+}
+	</script>
+</body>
+
+</html>

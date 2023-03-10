@@ -1,0 +1,88 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2 {
+  text-align: left;
+}
+
+h2 {
+  font-size: 75px;
+  margin-bottom: -7rem;
+}
+ul {
+  position: relative;
+  bottom: 125px;
+  left: 225px;
+  font-weight: normal;
+  font-size: 12px;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  margin-top: 70px;
+  padding: 70px;
+  border: 1px solid rgb(68, 73, 76);
+  border-radius: 10px;
+}
+
+.form-control {
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 3px;
+}
+
+.btn-primary {
+  position: flex;
+  left: 5px;
+  background: #0b72a0;
+  border: gray;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 200ms ease-in-out;
+  color: white;
+  padding: 5px 10px;
+}
+.btn-primary:hover {
+  background: rgb(126, 163, 188);
+  border: #0b72a0;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-success{
+  position: flex;
+  left: 5px;
+  background: #198754;
+  border: gray;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 200ms ease-in-out;
+  color: white;
+  padding: 5px 10px;
+}
+
+.current-weather {
+  width: 80px;
+}
+
+.degree {
+  position: relative;
+  bottom: 80px;
+  left: 130px;
+
+  font-size: 15px;
+}
+.farenheit {
+  font-weight: bold;
+}
+.phw {
+  font-size: 14px;
+  font-weight: light;
+  left: 190px;
+  bottom: 112px;
+}
