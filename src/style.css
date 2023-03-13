@@ -54,7 +54,7 @@ li {
   font-weight: bold;
 }
 
-.btn-success{
+.btn-success {
   position: flex;
   left: 5px;
   background: #198754;
@@ -73,7 +73,7 @@ li {
 .degree {
   position: relative;
   bottom: 80px;
-  left: 130px;
+  left: 145px;
 
   font-size: 15px;
 }
